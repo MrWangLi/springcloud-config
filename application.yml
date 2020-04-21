@@ -1,0 +1,21 @@
+server:
+  port: 4433
+spring:
+  application:
+    name: cloud-config-center #服务名称
+  cloud:
+    config:
+      label: master #读取分支
+      server:
+        git:
+          uri: https://github.com/MrWangLi/springcloud-config.git #仓库地址
+          search-paths:
+            - springcloud-config
+eureka:
+  instance:
+    hostname: cloud-config-center-service
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-register: true
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
