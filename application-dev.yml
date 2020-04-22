@@ -1,5 +1,5 @@
 profile:
-  name: dev-1
+  name: dev-2
 datasource:
   url: jdbc:mysql://localhost:3306/springcloud
   type: com.alibaba.druid.pool.DruidDataSource
