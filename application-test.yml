@@ -1,3 +1,5 @@
+profile:
+  name: test
 datasource:
   url: jdbc:mysql://localhost:3306/springcloud
   type: com.alibaba.druid.pool.DruidDataSource
